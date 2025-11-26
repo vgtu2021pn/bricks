@@ -84,7 +84,7 @@ header( 'Location: config/' ) ;
       <hr />
       <div class="row">
         <div class="six columns">
-          <p><a href="https://sechow.com/bricks/" target="_blank">OWASP Bricks</a></p>
+          <p><a href="https://sechow.com/bricks/" target="_blank">OWASP Bricks</a>&nbsp;</p>
         </div>
         <div class="right">
            <a href="http://www.facebook.com/OWASPBricks" target="_blank"><img src="images/Facebook.png" alt="Social Media 1"/></a>&nbsp;
