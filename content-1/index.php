@@ -14,8 +14,8 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>OWASP Bricks Content Page #1</title>  
   <!-- Included CSS Files (Uncompressed) -->
   <!--
@@ -26,11 +26,7 @@
   <link rel="stylesheet" href="../stylesheets/app.css">
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <script src="../javascripts/modernizr.foundation.js"></script>
-  <!-- IE Fix for HTML5 Tags -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="row">
@@ -87,3 +83,4 @@
   <script src="../javascripts/app.js"></script>  
 </body>
 </html>
+
