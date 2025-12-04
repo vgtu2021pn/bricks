@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../stylesheets/app.css">
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <script src="../javascripts/modernizr.foundation.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="row">
@@ -92,4 +93,5 @@
   
 </body>
 </html>
+
 
