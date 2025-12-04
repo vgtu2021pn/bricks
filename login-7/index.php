@@ -51,6 +51,7 @@
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="row">
@@ -105,3 +106,4 @@
   <script src="../javascripts/app.js"></script>  
 </body>
 </html>
+
