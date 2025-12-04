@@ -6,9 +6,9 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width">
   <title>Bricks Content Page #3</title>  
   <!-- Included CSS Files (Uncompressed) -->
   <!--
@@ -19,11 +19,8 @@
   <link rel="stylesheet" href="../stylesheets/app.css">
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <script src="../javascripts/modernizr.foundation.js"></script>
-  <!-- IE Fix for HTML5 Tags -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></head>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
 <body>
 <div class="row">
 	<div class="four columns centered">
@@ -97,3 +94,4 @@
   <script src="../javascripts/app.js"></script>
 </body>
 </html>
+
