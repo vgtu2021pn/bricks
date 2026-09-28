@@ -44,68 +44,83 @@ ini_set('display_errors', '1');
 	else 
 		{echo "Error! droping database: " . mysqli_error($con); echo "</br></br>";}
 
-//Creating new database
 	$sql="CREATE database $dbname";
 	if (mysqli_query($con,$sql))
 		{echo "1. Creating database";echo "</br></br>";}
 	else 
 		{echo "1. Error creating database: " . mysqli_error($con);echo "</br></br>";}
 
-//creating table users
-$sql="CREATE TABLE $dbname.users (
-  `idusers` INT NOT NULL ,
-  `name` VARCHAR(45) NOT NULL ,
-  `email` VARCHAR(45) NOT NULL ,
-  `password` VARCHAR(45) NOT NULL ,
-  `ua` VARCHAR(45) NOT NULL ,
-  `ref` VARCHAR(145) NOT NULL ,
-  `host` VARCHAR(45) NOT NULL ,
-  `lang` VARCHAR(45) NOT NULL ,
-  PRIMARY KEY (`idusers`)
-)";
+	$sql="CREATE TABLE $dbname.users (
+		`idusers` INT NOT NULL ,
+		`name` VARCHAR(45) NOT NULL ,
+		`email` VARCHAR(45) NOT NULL ,
+		`password` VARCHAR(45) NOT NULL ,
+		`ua` VARCHAR(45) NOT NULL ,
+		`ref` VARCHAR(145) NOT NULL ,
+		`host` VARCHAR(45) NOT NULL ,
+		`lang` VARCHAR(45) NOT NULL ,
+		PRIMARY KEY (`idusers`)
+	)";
 	if (mysqli_query($con,$sql))
 		{echo "2.Created new table";echo "</br></br>";}
 	else 
 		{echo "2.Error in creating table: " . mysqli_error($con);echo "</br></br>";}
 
-//3
-$sql="INSERT INTO $dbname.users
+	$sql="INSERT INTO $dbname.users
 		(`idusers`, `name`, `email`, `password`, `ua`, `ref`, `host`, `lang`)
      VALUES
-     (0, 'admin', 'admin@getmantra.com', 'admin', 'Brick_Browser', '$server$scriptpath/content-13/index.php', '127.0.0.1', 'en')";
+		(0, 'admin', 'admin@getmantra.com', 'admin', 'Brick_Browser', '$server$scriptpath/content-13/index.php', '127.0.0.1', 'en')";
 	if (mysqli_query($con,$sql))
 		{echo "3. Added admin user details"; echo "</br></br>";}
 	else 
-		{echo "3. Error adding admin user details: " . mysqli_error($con);echo "</br></br>";}
+		{echo "3. Error adding admin: " . mysqli_error($con);echo "</br></br>";}
     
-//4
-$sql="INSERT INTO $dbname.users
+	$sql="INSERT INTO $dbname.users
 		(`idusers`, `name`, `email`, `password`, `ua`, `ref`, `host`, `lang`)
      VALUES
-     (1, 'tom', 'tom@getmantra.com', 'tom', 'Block_Browser', '', '8.8.8.8', 'en');";
+		(1, 'tom', 'tom@getmantra.com', 'tom', 'Block_Browser', '', '8.8.8.8', 'en');";
 	if (mysqli_query($con,$sql))
 		{echo "3. Added tom"; echo "</br></br>";}
 	else 
 		{echo "3. Error adding tom: " . mysqli_error($con);echo "</br></br>";}
 
-//5
-$sql="INSERT INTO $dbname.users
+	$sql="INSERT INTO $dbname.users
 		(`idusers`, `name`, `email`, `password`, `ua`, `ref`, `host`, `lang`)
      VALUES
-     (2, 'ron', 'ron@getmantra.com', 'ron', 'Rain_Browser', '', '192.168.1.1', 'en')";
+		(2, 'ron', 'ron@getmantra.com', 'ron', 'Rain_Browser', '', '192.168.1.1', 'en')";
 	if (mysqli_query($con,$sql))
 		{echo "3. Added ron"; echo "</br></br>";}
 	else 
 		{echo "3. Error adding ron: " . mysqli_error($con);echo "</br></br>";}
-//6
-$sql="INSERT INTO $dbname.users
+
+	$sql="INSERT INTO $dbname.users
 		(`idusers`, `name`, `email`, `password`, `ua`, `ref`, `host`, `lang`)
      VALUES
-     (3, 'harry', 'harry@getmantra.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Mantra', '', '127.0.0.1', 'en');";
+		(3, 'harry', 'harry@getmantra.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Mantra', '', '127.0.0.1', 'en');";
 	if (mysqli_query($con,$sql))
 		{echo "3. Added harry"; echo "</br></br>";}
 	else 
 		{echo "3. Error adding harry: " . mysqli_error($con);echo "</br></br>";}
+
+	$sql="CREATE TABLE $dbname.accounts (
+		`idaccounts` INT NOT NULL ,
+		`name` VARCHAR(45) NOT NULL ,
+		`coins` DOUBLE(8,2) NOT NULL ,
+		PRIMARY KEY (`idaccounts`)
+	)";
+	if (mysqli_query($con,$sql))
+		{echo "4.Created new table";echo "</br></br>";}
+	else 
+		{echo "4.Error in creating table: " . mysqli_error($con);echo "</br></br>";}
+
+	$sql="INSERT INTO $dbname.accounts
+		(`idaccounts`, `name`, `coins`)
+     VALUES
+		(1, 'balance', 500.00);";
+	if (mysqli_query($con,$sql))
+		{echo "5. Added balance"; echo "</br></br>";}
+	else 
+		{echo "5. Error adding balance: " . mysqli_error($con);echo "</br></br>";}
 		
 	header( 'Location: index.php' ) ;
 
