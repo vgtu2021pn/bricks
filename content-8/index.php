@@ -12,7 +12,7 @@
 		$result=mysqli_query($con,$sql);
 	}
 	
-	$sql_main = "SELECT idaccounts, name, coins FROM accounts";
+	$sql_main = "SELECT idaccounts, name, coins FROM accounts WHERE idaccounts = 1";
 	$result_main=mysqli_query($con,$sql_main);
 ?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
